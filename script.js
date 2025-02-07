@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-
     // ------------------ START OF INITIALIZATION CODE FOR NEWCOMERS --------------------
 
     // Injecting keyframes into the document
@@ -1188,13 +1187,99 @@ profileIconBtn.addEventListener('click', () => {
     const pfpPanelItemContainer = document.createElement('div');
     pfpPanelItemContainer.style.display = "flex";
     pfpPanelItemContainer.style.flexDirection = "column";
-    pfpPanelItemContainer.style.justifyContent = "center";
     pfpPanelItemContainer.style.alignItems = "center";
     pfpPanelItemContainer.style.width = "70%";
     pfpPanelItemContainer.style.height = "27vh";
     pfpPanelItemContainer.style.backgroundColor = "rgba(255, 255, 255, 0.3)";
     pfpPanelItemContainer.style.border = "5px solid white";
     pfpPanelItemContainer.style.borderRadius = "10px";
+
+    const pfpPanelItemContainerTitle = document.createElement('h2');
+    pfpPanelItemContainerTitle.style.fontSize = "20px";
+    pfpPanelItemContainerTitle.style.color = "white";
+    pfpPanelItemContainerTitle.style.textAlign = "center";
+    pfpPanelItemContainerTitle.textContent = "Featured";
+    pfpPanelItemContainerTitle.style.fontFamily = "'IBM Plex Mono', serif";
+    pfpPanelItemContainerTitle.style.textAlign = "center";
+    pfpPanelItemContainerTitle.style.marginTop = "2vh";
+
+    const pfpPanelRow1Container = document.createElement('div');
+    pfpPanelRow1Container.style.display = "flex";
+    pfpPanelRow1Container.style.justifyContent = "center";
+    pfpPanelRow1Container.style.alignItems = "center";
+    pfpPanelRow1Container.style.width = "90%";
+    pfpPanelRow1Container.style.height = "8vh";
+    pfpPanelRow1Container.style.gap = "5%";
+    // pfpPanelRow1Container.style.backgroundColor = "blue";
+
+    const pfpPanelR1I1 = document.createElement('img');
+    pfpPanelR1I1.src = "https://static-00.iconduck.com/assets.00/profile-circle-icon-256x256-cm91gqm2.png";
+    pfpPanelR1I1.style.width = "60px";
+    pfpPanelR1I1.style.height = "60px";
+    pfpPanelR1I1.style.borderRadius = "20px";
+    pfpPanelR1I1.style.cursor = "pointer";
+
+    const pfpPanelR1I2 = document.createElement('img');
+    pfpPanelR1I2.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/b8d517e6-2c88-453b-8d3a-3f79ff39b7c0/dgmmn3s-46371f14-ee56-425a-9cfc-a2d565bf192f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2I4ZDUxN2U2LTJjODgtNDUzYi04ZDNhLTNmNzlmZjM5YjdjMFwvZGdtbW4zcy00NjM3MWYxNC1lZTU2LTQyNWEtOWNmYy1hMmQ1NjViZjE5MmYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BI_m7F3HyOW5hmcwfrEFDj63TlBcx5sDXlUgCO6K3YQ";
+    pfpPanelR1I2.style.width = "60px";
+    pfpPanelR1I2.style.height = "60px";
+    pfpPanelR1I2.style.borderRadius = "20px";
+    pfpPanelR1I2.style.cursor = "pointer";
+
+    const pfpPanelR1I3 = document.createElement('img');
+    pfpPanelR1I3.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYJBRF3wwyf2PDriXg1j7FqXLEX2MWmOzgQ&s";
+    pfpPanelR1I3.style.width = "60px";
+    pfpPanelR1I3.style.height = "60px";
+    pfpPanelR1I3.style.borderRadius = "20px";
+    pfpPanelR1I3.style.cursor = "pointer";
+
+    const pfpPanelR1I4 = document.createElement('img');
+    pfpPanelR1I4.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDqGvrz8GusNuKYmFFR6YjHsmkwJiI_AHR3w&s";
+    pfpPanelR1I4.style.width = "60px";
+    pfpPanelR1I4.style.height = "60px";
+    pfpPanelR1I4.style.borderRadius = "20px";
+    pfpPanelR1I4.style.cursor = "pointer";
+
+
+    const pfpPanelRow2Container = document.createElement('div');
+    pfpPanelRow2Container.style.display = "flex";
+    pfpPanelRow2Container.style.justifyContent = "center";
+    pfpPanelRow2Container.style.alignItems = "center";
+    pfpPanelRow2Container.style.width = "90%";
+    pfpPanelRow2Container.style.height = "8vh";
+    pfpPanelRow2Container.style.gap = "5%";
+    pfpPanelRow2Container.style.marginTop = "2vh";
+    // pfpPanelRow2Container.style.backgroundColor = "blue";
+
+
+    const pfpPanelR2I1 = document.createElement('img');
+    pfpPanelR2I1.src = "https://wallpapers.com/images/hd/cool-profile-picture-o6xweez7rh4347gx.jpg";
+    pfpPanelR2I1.style.width = "60px";
+    pfpPanelR2I1.style.height = "60px";
+    pfpPanelR2I1.style.borderRadius = "20px";
+    pfpPanelR2I1.style.cursor = "pointer";
+
+    const pfpPanelR2I2 = document.createElement('img');
+    pfpPanelR2I2.src = "https://i.pinimg.com/170x/f1/c1/98/f1c1985141ae734194fe69fd52dcb4eb.jpg";
+    pfpPanelR2I2.style.width = "60px";
+    pfpPanelR2I2.style.height = "60px";
+    pfpPanelR2I2.style.borderRadius = "20px";
+    pfpPanelR2I2.style.cursor = "pointer";
+
+    const pfpPanelR2I3 = document.createElement('img');
+    pfpPanelR2I3.src = "https://i.postimg.cc/vmm2YMmb/Cropped-Image.png";
+    pfpPanelR2I3.style.width = "60px";
+    pfpPanelR2I3.style.height = "60px";
+    pfpPanelR2I3.style.borderRadius = "20px";
+    pfpPanelR2I3.style.cursor = "pointer";
+
+    const pfpPanelR2I4 = document.createElement('img');
+    pfpPanelR2I4.src = "https://i.postimg.cc/XYjQL3dd/Cropped-Image-2.png";
+    pfpPanelR2I4.style.width = "60px";
+    pfpPanelR2I4.style.height = "60px";
+    pfpPanelR2I4.style.borderRadius = "20px";
+    pfpPanelR2I4.style.cursor = "pointer";
+
 
     const pfpPanelCurrentPfpContainer = document.createElement('div');
     pfpPanelCurrentPfpContainer.style.display = "flex";
@@ -1208,37 +1293,29 @@ profileIconBtn.addEventListener('click', () => {
     pfpPanelCurrentPfpContainer.style.borderRadius = "10px";
 
     const pfpPanelCurrentTitle = document.createElement('h2');
-    pfpPanelCurrentTitle.style.fontSize = "25px";
+    pfpPanelCurrentTitle.style.fontSize = "20px";
     pfpPanelCurrentTitle.style.color = "white";
     pfpPanelCurrentTitle.style.textAlign = "center";
     pfpPanelCurrentTitle.textContent = "Current";
     pfpPanelCurrentTitle.style.fontFamily = "'IBM Plex Mono', serif";
     pfpPanelCurrentTitle.style.textAlign = "center";
 
-    const pfpPanelRow1Container = document.createElement('div');
-    pfpPanelRow1Container.style.display = "flex";
-    pfpPanelRow1Container.style.justifyContent = "center";
-    pfpPanelRow1Container.style.alignItems = "center";
-    pfpPanelRow1Container.style.width = "90%";
-    pfpPanelRow1Container.style.height = "10vh";
-    // pfpPanelRow1Container.style.backgroundColor = "blue";
+    const pfpPanelCurrentIcon = document.createElement('img');
+    pfpPanelCurrentIcon.id = "currentPfp";
+    pfpPanelCurrentIcon.style.width = "70px";
+    pfpPanelCurrentIcon.style.height = "70px";
+    pfpPanelCurrentIcon.style.borderRadius = "30px";
+    pfpPanelCurrentIcon.style.padding = "10px";
+    // pfpPanelCurrentIcon.style.border = "5px solid black";
+    pfpPanelCurrentIcon.src = localStorage.getItem("profilePicture");
+    pfpPanelCurrentIcon.style.transition = "transform 0.3s ease-in-out";
 
-    const pfpPanelIcon1 = document.createElement('img');
-    pfpPanelIcon1.id = "currentPfp";
-    pfpPanelIcon1.style.width = "70px";
-    pfpPanelIcon1.style.height = "70px";
-    pfpPanelIcon1.style.borderRadius = "50%";
-    pfpPanelIcon1.style.padding = "10px";
-    // pfpPanelIcon1.style.border = "5px solid black";
-    pfpPanelIcon1.src = localStorage.getItem("profilePicture");
-    pfpPanelIcon1.style.transition = "transform 0.3s ease-in-out";
-
-    pfpPanelIcon1.addEventListener('mouseenter', () => {
-        pfpPanelIcon1.style.transform = "scale(1.05)";
+    pfpPanelCurrentIcon.addEventListener('mouseenter', () => {
+        pfpPanelCurrentIcon.style.transform = "scale(1.05)";
     });
 
-    pfpPanelIcon1.addEventListener('mouseleave', () => {
-        pfpPanelIcon1.style.transform = "scale(1)";
+    pfpPanelCurrentIcon.addEventListener('mouseleave', () => {
+        pfpPanelCurrentIcon.style.transform = "scale(1)";
     });
 
     const pfpPanelBtnContainer = document.createElement('div');
@@ -1555,9 +1632,19 @@ profileIconBtn.addEventListener('click', () => {
     pfpPanel.appendChild(pfpPanelContainers);
     pfpPanelContainers.appendChild(pfpPanelItemContainer);
     pfpPanelContainers.appendChild(pfpPanelCurrentPfpContainer);
+    pfpPanelItemContainer.appendChild(pfpPanelItemContainerTitle);
     pfpPanelItemContainer.appendChild(pfpPanelRow1Container);
-    pfpPanelCurrentPfpContainer.appendChild(pfpPanelIcon1);
+    pfpPanelItemContainer.appendChild(pfpPanelRow2Container);
+    pfpPanelRow1Container.appendChild(pfpPanelR1I1);
+    pfpPanelRow1Container.appendChild(pfpPanelR1I2);
+    pfpPanelRow1Container.appendChild(pfpPanelR1I3);
+    pfpPanelRow1Container.appendChild(pfpPanelR1I4);
+    pfpPanelRow2Container.appendChild(pfpPanelR2I1);
+    pfpPanelRow2Container.appendChild(pfpPanelR2I2);
+    pfpPanelRow2Container.appendChild(pfpPanelR2I3);
+    pfpPanelRow2Container.appendChild(pfpPanelR2I4);
     pfpPanelCurrentPfpContainer.appendChild(pfpPanelCurrentTitle);
+    pfpPanelCurrentPfpContainer.appendChild(pfpPanelCurrentIcon);
     pfpPanel.appendChild(pfpPanelBtnContainer);
     pfpPanelBtnContainer.appendChild(pfpPanelUploadBtn);
     pfpPanelBtnContainer.appendChild(pfpPanelSelectBtn);
@@ -1605,9 +1692,9 @@ profileIconBtn.addEventListener('click', () => {
 
     // ------------------ END OF CLOCK JS -----------------------
 
+
     window.addEventListener("load", () => {
         document.body.style.opacity = "1"; // Trigger fade-in
     });
-
 
 });
